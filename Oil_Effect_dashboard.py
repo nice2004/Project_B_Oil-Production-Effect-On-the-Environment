@@ -51,7 +51,7 @@ def create_choropleth_map(select_continent):
         color='Annual CO₂ emissions from oil',
         hover_name='Entity',
         animation_frame='Year',
-        title=f'CO₂ Emissions from Oil in {select_continent} (Click a country to view trends)',
+        title=f'CO₂ Emissions from Oil in {select_continent} (Click a country to view its line graph)',
         color_continuous_scale=px.colors.sequential.Blues,
         range_color=[0, filtered_dataset['Annual CO₂ emissions from oil'].max()],
         labels={'Annual CO₂ emissions from oil': 'CO₂ Emissions (t)'},
@@ -128,7 +128,7 @@ app.layout = html.Div([
         html.Div([
             html.H1('CO₂ Emissions from Oil Analysis',
                     style={'color': '#2c3e50', 'margin-bottom': '5px', 'text-align': 'center'}),
-            html.P('Click on a country in the map to view detailed trends',
+            html.P('Click on a country in the map to view its line graph',
                    style={'color': '#7f8c8d'})
         ], className='header'),
 
@@ -264,7 +264,7 @@ def update_line_chart(selected_countries, selected_metric):
     fig = create_line_chart(selected_countries, selected_metric)
     # Enhance the layout
     fig.update_layout(
-        height=600,
+        height=400,
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
         margin=dict(l=40, r=40, t=60, b=40)
     )
@@ -280,8 +280,8 @@ def update_choropleth_map(selected_continent):
     fig = create_choropleth_map(selected_continent)
     # Enhance the layout
     fig.update_layout(
-        height=700,
-        margin=dict(l=0, r=0, t=50, b=0)
+        height=460,
+        margin=dict(l=50, r=50, t=50, b=50),
     )
     return fig
 
