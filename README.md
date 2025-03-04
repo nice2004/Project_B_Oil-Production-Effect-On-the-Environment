@@ -1,4 +1,4 @@
-# Project-B---Oil Production impact on Carbon dioxide Gas Emissions in the World
+# Project B__Oil Production impact on Carbon dioxide Gas Emissions in the World
 
 ***Names: Nice Teta Hirwa*** <br />
 ***Instructor: Professor Mike Ryu*** <br />
