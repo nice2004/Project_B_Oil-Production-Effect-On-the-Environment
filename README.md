@@ -53,4 +53,12 @@ and finally updating the choropleth map
 
 And I finally called the main() function to run the code.
 
+## Data Source Citation
+
+Dbouquin. “IS_608/NanosatDB_Munging/Countries-Continents.csv at Master · Dbouquin/IS_608.” GitHub,   
+     github.com/dbouquin/IS_608/blob/master/NanosatDB_munging/Countries-Continents.csv.
+
+“Annual CO₂ Emissions From Oil.” Our World in Data, 21 Nov. 2024, ourworldindata.org/grapher/annual-co2-oil.
+
+
 
