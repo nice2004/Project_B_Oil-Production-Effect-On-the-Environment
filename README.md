@@ -36,19 +36,19 @@ and other similar routes.
 
 ## Explaining the coding part of the project
 This code of this project has 6 main parts:
-1. Filtered the data set - In this section, I filtered the dataset by being processed and read by panda, and filtering out 
+1. ***Filtered the data set*** - In this section, I filtered the dataset by being processed and read by panda, and filtering out 
 the data from 1990 to 2023.
-2. Created line chart - I created a function that takes in selected countries as a parameter since the line chart was in charge of displaying
+2. ***Created line chart*** - I created a function that takes in selected countries as a parameter since the line chart was in charge of displaying
 line graphs of a selected country from the map. In this section, I filtered the dataset by giving it its x and y, created the title of the line graph 
 and checked whether particular countries are in the dataset. 
-3. Created choropleth map - a lot of logic about the latitude, longitude, and the zoom in and out numbers are in this particular function.
+3. ***Created choropleth map*** - a lot of logic about the latitude, longitude, and the zoom in and out numbers are in this particular function.
 In here, I created a function that creates a choropleth map with the animation frame of years on the y-axis, added in colors, titles, and 
 processed a csv that maps countries to continents so that a choropleth map would even be a content if a user wants to navigate the data in
 continents.
-4. CSS styling - Added in all the css styles such as the position of the header , container, tabs_container, etc
-5. App layout - Created tabs for the switch from the choropleth map to line graph, created the UI and UX interface such as tabs, and
+4. ***CSS styling*** - Added in all the css styles such as the position of the header , container, tabs_container, etc
+5. ***App layout*** - Created tabs for the switch from the choropleth map to line graph, created the UI and UX interface such as tabs, and
 dropdowns for the line graphs and for the map.
-6. Callbacks: Created app calls for updating the selected country, updating the country dropdown, updating line charts, 
+6. ***Callbacks***: Created app calls for updating the selected country, updating the country dropdown, updating line charts, 
 and finally updating the choropleth map
 
 And I finally called the main() function to run the code.
